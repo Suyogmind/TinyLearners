@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PhotosGallery_CVCell" reuseIdentifier="PhotosGallery_CVCell" id="gTV-IL-0wX" customClass="PhotosGallery_CVCell" customModule="Tiny_Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fg0-Nf-bqp" customClass="Shadow_view" customModule="Tiny_Academy" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="120" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yzq-A2-Kgu">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-eo-Lpb">
+                                <rect key="frame" x="0.0" y="100" width="120" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="iJE-4C-5aO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Cek-eo-Lpb" secondAttribute="trailing" id="M5r-iW-jXK"/>
+                            <constraint firstItem="Cek-eo-Lpb" firstAttribute="top" secondItem="Yzq-A2-Kgu" secondAttribute="bottom" id="MXZ-jM-chE"/>
+                            <constraint firstItem="Cek-eo-Lpb" firstAttribute="leading" secondItem="fg0-Nf-bqp" secondAttribute="leading" id="QEN-9S-HkD"/>
+                            <constraint firstItem="Yzq-A2-Kgu" firstAttribute="top" secondItem="fg0-Nf-bqp" secondAttribute="top" id="YIi-rs-WiP"/>
+                            <constraint firstAttribute="trailing" secondItem="Yzq-A2-Kgu" secondAttribute="trailing" id="eT2-d0-4fc"/>
+                            <constraint firstAttribute="bottom" secondItem="Cek-eo-Lpb" secondAttribute="bottom" id="sBM-Yx-Vs7"/>
+                            <constraint firstItem="Yzq-A2-Kgu" firstAttribute="leading" secondItem="fg0-Nf-bqp" secondAttribute="leading" id="zhW-wi-WXH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fg0-Nf-bqp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="LXa-BJ-A89"/>
+                <constraint firstAttribute="trailing" secondItem="fg0-Nf-bqp" secondAttribute="trailing" constant="10" id="S81-u4-JmV"/>
+                <constraint firstItem="fg0-Nf-bqp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="hxN-YW-ayv"/>
+                <constraint firstAttribute="bottom" secondItem="fg0-Nf-bqp" secondAttribute="bottom" constant="10" id="vfs-qN-o2s"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="Date_LB" destination="Cek-eo-Lpb" id="Skn-Se-0vi"/>
+                <outlet property="IMG_IV" destination="Yzq-A2-Kgu" id="zt4-5C-AmG"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="134.59821428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
